@@ -8,12 +8,17 @@ html, body {
   font-family: 'Space Grotesk', sans-serif;
   background-color: $colorPrimary;
   overflow-x: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 0;
   margin: 0;
   line-height: $lineHeight;
+  width: 100%;
+
+  #root {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   a:link {
     text-decoration: none;
