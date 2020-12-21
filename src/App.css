@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.FeaturedItem {
+  background-color: blue;
+  margin-bottom: 16px;
+}
+
+.ListItem {
+  background-color: red;
+  margin-bottom: 16px;
+}
