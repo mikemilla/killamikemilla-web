@@ -9,10 +9,34 @@ html, body {
   background-color: $colorPrimary;
   overflow-x: hidden;
   display: flex;
-  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
   padding: 0;
   margin: 0;
   line-height: $lineHeight;
+
+  a:link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .isLast {
+    margin-bottom: 0;
+  }
+
 }

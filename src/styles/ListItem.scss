@@ -7,9 +7,22 @@
     font-size: $fontNormal;
     overflow: hidden;
     @include cornerRadius;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-    &:last-child {
+    img {
+        height: $margin24;
+        width: $margin24;
+    }
+
+    p {
+        flex: 1;
+        margin-top: 0;
         margin-bottom: 0;
+        margin-right: $margin48;
+        margin-left: $margin24;
+        text-align: center;
     }
 
 }

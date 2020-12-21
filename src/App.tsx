@@ -37,6 +37,7 @@ function App() {
         <p>{error.code}</p>
       )}
       {entries && entries.map((entry, index) => {
+        entry.isLast = index === entries.length - 1
         if (entry.isFeatured) {
           return <FeaturedItem key={index} entry={entry} />
         } else {

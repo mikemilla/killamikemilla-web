@@ -1,10 +1,16 @@
 import React from 'react'
 
 function ListItem(data: any) {
+
+    console.log(data)
+
     return (
-        <div className='ListItem'>
-            {data.entry.title}
-        </div>
+        <a href={data.entry.link}>
+            <div className={data.entry.isLast ? 'ListItem isLast' : 'ListItem'}>
+                <img src={data.entry.imageUrl} />
+                <p>{data.entry.title}</p>
+            </div>
+        </a>
     )
 }
   
