@@ -1,0 +1,15 @@
+.ListItem {
+    background-color: $colorSecondary;
+    margin-bottom: $margin16;
+    margin-right: $margin16;
+    margin-left: $margin16;
+    padding: $margin24;
+    font-size: $fontNormal;
+    overflow: hidden;
+    @include cornerRadius;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+}

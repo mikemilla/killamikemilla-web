@@ -1,9 +1,9 @@
 import React from 'react'
 
-function ListItem(entry: any) {
+function ListItem(data: any) {
     return (
         <div className='ListItem'>
-            {JSON.stringify(entry)}
+            {data.entry.title}
         </div>
     )
 }

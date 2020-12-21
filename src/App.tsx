@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import './App.css'
-import FeaturedItem from './components/featured-item'
-import ListItem from './components/list-item'
+import './styles/App.scss'
+import FeaturedItem from './components/FeaturedItem'
+import ListItem from './components/ListItem'
 import { EntryRepository } from './repository/entry-repository'
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
   }, [])
 
   return (
-    <div>
+    <div className='RootContainer'>
       {isLoading && (
         <p>Loading...</p>
       )}

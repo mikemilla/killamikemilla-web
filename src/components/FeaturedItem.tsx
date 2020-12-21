@@ -1,9 +1,10 @@
 import React from 'react'
 
-function FeaturedItem(entry: any) {
+function FeaturedItem(data: any) {
     return (
         <div className='FeaturedItem'>
-            {JSON.stringify(entry)}
+            <img src={data.entry.imageUrl} />
+            <p>{data.entry.title}</p>
         </div>
     )
 }

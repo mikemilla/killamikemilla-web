@@ -1,0 +1,22 @@
+$margin16: 16px;
+$margin24: 24px;
+$margin32: 32px;
+$margin48: 48px;
+$margin64: 64px;
+$cornerRadius: 10px;
+$screenTablet: 568px;
+$fontNormal: 16px;
+$fontLarge: 18px;
+$lineHeight: 28px;
+
+@mixin tablet {
+    @media (min-width: #{$screenTablet}) {
+        @content;
+    }
+}
+
+@mixin cornerRadius {
+    -moz-border-radius: $cornerRadius;
+    -webkit-border-radius: $cornerRadius;
+    border-radius: $cornerRadius;
+}

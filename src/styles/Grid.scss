@@ -1,0 +1,12 @@
+.RootContainer {
+    width: 100%;
+    padding-top: $margin32;
+    padding-bottom: $margin32;
+
+    @include tablet {
+        padding-top: $margin64;
+        padding-bottom: $margin64;
+        width: $screenTablet;
+    }
+
+}
