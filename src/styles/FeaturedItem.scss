@@ -27,4 +27,15 @@
         text-align: center;
     }
 
+    // Default animation values
+    opacity: 0;
+    margin-top: $margin32;
+
+    &.animate {
+        transition-timing-function: ease;
+        transition: all 500ms;
+        opacity: 1;
+        margin-top: 0;
+    }
+
 }

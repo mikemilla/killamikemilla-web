@@ -6,8 +6,8 @@ function ListItem(data: any) {
         setTimeout(() => {
             const element = document.getElementById(`ListItem-${data.entry.index}`)
             if (element) element.classList.add('animate')
-        }, 75 * data.entry.index + 1)
-    }, [data.entry.index])
+        }, data.entry.timeout)
+    }, [data.entry.timeout])
 
     return (
         <a href={data.entry.link} target={data.entry.openNewTab ? '_blank' : ''}>
