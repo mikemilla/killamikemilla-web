@@ -20,6 +20,22 @@ html, body {
     justify-content: center;
   }
 
+  .error {
+    position: absolute;
+    color: $colorSecondary;
+    text-align: center;
+    font-size: $fontLarge;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: $margin48;
+    right: $margin48;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   a:link {
     text-decoration: none;
     color: inherit;

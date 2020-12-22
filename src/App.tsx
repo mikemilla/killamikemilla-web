@@ -29,22 +29,28 @@ function App() {
   }, [])
 
   return (
-    <div className='RootContainer'>
-      {isLoading && (
-        <p>Loading...</p>
-      )}
+    <>
       {error && (
-        <p>{error.code}</p>
+        <p className='error'>Oops! There was an error getting the list of links.</p>
       )}
-      {entries && entries.map((entry, index) => {
-        entry.isLast = index === entries.length - 1
-        if (entry.isFeatured) {
-          return <FeaturedItem key={index} entry={entry} />
-        } else {
-          return <ListItem key={index} entry={entry} />
-        }
-      })}
-    </div>
+      {/* {isLoading && (
+        // TODO: Add a loading state in the future
+      )} */}
+      <div className='RootContainer'>
+        {entries && entries.map((entry, index) => {
+
+          // Add extra props
+          entry.isLast = index === entries.length - 1
+          entry.index = index
+
+          if (entry.isFeatured) {
+            return <FeaturedItem key={index} entry={entry} />
+          } else {
+            return <ListItem key={index} entry={entry} />
+          }
+        })}
+      </div>
+    </>
   )
 }
 
